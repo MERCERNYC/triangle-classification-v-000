@@ -9,15 +9,17 @@ class Triangle
   end
 
   def kind
-  if @side_a <= 0 || @side_b <= 0 || @side_c <= 0 
+    if @side_a <= 0 || @side_b <= 0 || @side_c <= 0
       raise TriangleError
-  if a == b and b == c
-    return :equilateral
-  if ( a == b or b == c or a == c )
-    return :isosceles
-  else  :scalene
-end
-end
+    elsif @side_a == @side_b && @side_b == @side_c
+        :equilateral
+    elsif @side_a == @side_b || @side_a == @side_c || @side_b == @side_c
+        :isosceles
+      else
+        :scalene
+      end
+    end
+  end
 
 class TriangleError < StandardError
 
