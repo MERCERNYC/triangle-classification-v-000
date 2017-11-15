@@ -4,16 +4,16 @@ class Triangle
 
   def initialize (side_a, side_b, side_c)
     @side_a = side_a
-    @side_ab = side_b
+    @side_b = side_b
     @side_c = side_c
   end
 
-  def triangle(a\, b, c)
+  def kind(side_a, side_b, side_c)
   return :equilateral if a == b and b == c
   return :isosceles if ( a == b or b == c or a == c )
   return :scalene
 end
-end 
+end
 
 class TriangleError < StandardError
 
