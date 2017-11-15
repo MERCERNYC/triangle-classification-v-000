@@ -8,7 +8,9 @@ class Triangle
     @side_c = side_c
   end
 
-  def kind(side_a, side_b, side_c)
+  def kind
+  if @side_a <= 0 || @side_b <= 0 || @side_c <= 0 
+      raise TriangleError
   if a == b and b == c
     return :equilateral
   if ( a == b or b == c or a == c )
