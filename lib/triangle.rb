@@ -13,6 +13,7 @@ class Triangle
   return :isosceles if ( a == b or b == c or a == c )
   return :scalene
 end
+end 
 
 class TriangleError < StandardError
 
