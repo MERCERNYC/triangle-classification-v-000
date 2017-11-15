@@ -1,11 +1,17 @@
 class Triangle
-  attr_accessor :equilateral, :isosceles, :scalene
+  
+  attr_accessor :side_one, :side_two, :side_three
 
-  def initialize (attributes)
-
-  end 
+  def initialize (side_one, side_two, side_three)
+    @side_one = side_one
+    @side_two = side_two
+    @side_three = side_three
+  
 end
 
 class TriangleError < StandardError
- # triangle error code
+
+  def message
+     "Triangle is invalid"
+  end 
 end
