@@ -1,14 +1,14 @@
 class Triangle
 
-  attr_accessor :a, :b, :c
+  attr_accessor :side_a, :side_b, :side_c
 
-  def initialize (a, b, c)
-    @a = a
-    @b = b
-    @c = c
+  def initialize (side_a, side_b, side_c)
+    @side_a = side_a
+    @side_ab = side_b
+    @side_c = side_c
   end
 
-  def triangle(a, b, c)
+  def triangle(a\, b, c)
   return :equilateral if a == b and b == c
   return :isosceles if ( a == b or b == c or a == c )
   return :scalene
