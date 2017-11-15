@@ -15,7 +15,7 @@ class Triangle
     return isosceles
   else scalene #A scalene triangle is a triangle that has no equal sides
   end
-end 
+end
 end
 
 class TriangleError < StandardError
