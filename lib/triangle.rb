@@ -6,17 +6,17 @@ class Triangle
     @a = a
     @b = b
     @c = c
-  end 
+  end
 
   def kind
     if a == b && b==c #An equilateral triangle is a triangle that has three equal sides.
-    equilateral 
-    elsif a == b || a == c || b == c #An isosceles triangle is a triangle that has two equal sides. 
+    equilateral
+    elsif a == b || a == c || b == c #An isosceles triangle is a triangle that has two equal sides.
     isosceles
   else scalene #A scalene triangle is a triangle that has no equal sides
-      
-    
   end
+ end 
+end 
 
 class TriangleError < StandardError
 
