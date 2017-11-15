@@ -8,14 +8,10 @@ class Triangle
     @c = c
   end
 
-  def kind
-    if a == b && b==c #An equilateral triangle is a triangle that has three equal sides.
-    return equilateral
-    elsif a == b || a == c || b == c #An isosceles triangle is a triangle that has two equal sides.
-    return isosceles
-  else scalene #A scalene triangle is a triangle that has no equal sides
-  end
-end
+  def triangle(a, b, c)
+  return :equilateral if a == b and b == c
+  return :isosceles if ( a == b or b == c or a == c )
+  return :scalene
 end
 
 class TriangleError < StandardError
