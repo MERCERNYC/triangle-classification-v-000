@@ -10,7 +10,7 @@ class Triangle
 
   def kind(side_a, side_b, side_c)
   if a == b and b == c
-    return :equilateral 
+    return :equilateral
   if ( a == b or b == c or a == c )
     return :isosceles
   else  :scalene
